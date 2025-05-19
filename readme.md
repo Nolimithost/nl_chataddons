@@ -28,7 +28,7 @@ Use code **`WELCOME`** at checkout to receive **10% off** your first month of Fi
 1. Clone this repo into your `resources` folder:
 
    ```bash
-   git clone https://github.com/yourname/nl_chataddons.git
+   git clone https://github.com/Nolimithost/nl_chataddons.git
    ```
 2. Add `ensure nl_chataddons` to your `server.cfg`
 3. Restart your server or start the resource manually:
