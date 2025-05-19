@@ -17,7 +17,7 @@ if Config.AvailableCommands.here.enabled then
     AddEventHandler('playerJoining', function()
         local client = source
         if not next(hereList) then return end
-        TriggerClientEvent("nl_chataddons:client:syncHere", -1, hereList)
+        TriggerClientEvent("nl_chataddons:client:syncHere", client, hereList)
     end)
     
     RegisterCommand(Config.AvailableCommands.here.commandName, function (client, args)
@@ -43,7 +43,7 @@ if Config.AvailableCommands.status.enabled then
     AddEventHandler('playerJoining', function()
         local client = source
         if not next(statusList) then return end
-        TriggerClientEvent("nl_chataddons:client:syncStatus", -1, statusList)
+        TriggerClientEvent("nl_chataddons:client:syncStatus", client, statusList)
     end)
 
     RegisterCommand(Config.AvailableCommands.status.commandName, function (client, args)
