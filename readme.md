@@ -8,6 +8,10 @@ Use code **`WELCOME`** at checkout to receive **10% off** your first month of Fi
 * Website: [https://nolimithost.cc/fivem](https://nolimithost.cc/fivem-hosting.html)
 * Discord: [discord.nolimithost.cc](https://discord.nolimithost.cc/)
 
+---
+
+**Available Commands**
+
 * **`/status`**
   Pins a message to the player. Run `/status` again to clear the pinned message.
 
