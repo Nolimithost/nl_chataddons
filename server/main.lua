@@ -14,6 +14,12 @@ AddEventHandler('playerDropped', function(reason)
 end)
 
 if Config.AvailableCommands.here.enabled then
+    AddEventHandler('playerJoining', function()
+        local client = source
+        if not next(hereList) then return end
+        TriggerClientEvent("nl_chataddons:client:syncHere", -1, hereList)
+    end)
+    
     RegisterCommand(Config.AvailableCommands.here.commandName, function (client, args)
         if hereList[client] then
             hereList[client] = nil
@@ -34,6 +40,12 @@ if Config.AvailableCommands.here.enabled then
 end
 
 if Config.AvailableCommands.status.enabled then
+    AddEventHandler('playerJoining', function()
+        local client = source
+        if not next(statusList) then return end
+        TriggerClientEvent("nl_chataddons:client:syncStatus", -1, statusList)
+    end)
+
     RegisterCommand(Config.AvailableCommands.status.commandName, function (client, args)
         if statusList[client] then
             statusList[client] = nil
